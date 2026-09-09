@@ -1,12 +1,12 @@
-## Lesson 02: 4-Bit Binary Counter 🔢
+# Lesson 02: 4-Bit Binary Counter 🔢
 A practical application of digital logic to create a 4-bit binary counter (counting from 0 to 15) using 4 LEDs.
 
-### 💡 Logic & Setup
+## 💡 Logic & Setup
 * **Binary Sequence:** Implemented manual high/low states for binary numbers from `0000` to `1111`.
 * **Pins Used:** Connected 4 LEDs to digital pins `13`, `12`, `10`, and `9`.
 * **Timing:** Utilized a custom variable (`int waiting = 750;`) to control the delay between each count step uniformly.
 
-### 🔌 Physical Demonstration
+## 🔌 Physical Demonstration
 ![Lesson 02 Circuit](images/lesson02.jpg)
 
 ---
