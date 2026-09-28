@@ -1,3 +1,20 @@
+# Lesson 3: Reading Analog Voltages (Voltage Divider) ⚡📟
+
+## 📝 Project Overview
+This project demonstrates how to read analog signals using the Arduino's Analog-to-Digital Converter (ADC). By understanding the concept of a Voltage Divider, we can measure variable voltages and output the real-time calculated values directly to the Serial Monitor.
+
+## 🛠️ Components Used
+- Arduino Uno
+- Breadboard
+- Potentiometer (or fixed Resistors for the voltage divider)
+- Jumper Wires
+
+## ⚙️ Circuit & Logic
+- The analog pin (`A1`) reads values from `0` to `1023`.
+- These raw values are converted into actual voltage (`0V` to `5V`) using floating-point math in C++.
+
+
+---
 # Lesson 02: 4-Bit Binary Counter 🔢
 A practical application of digital logic to create a 4-bit binary counter (counting from 0 to 15) using 4 LEDs.
 
