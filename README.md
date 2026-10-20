@@ -1,19 +1,19 @@
-Lesson 04: Sequential LED Blinking with For Loops 🚦
+# Lesson 04: Sequential LED Blinking with For Loops 🚦
 A practical project demonstrating the use of C++ `for` loops to sequentially blink three LEDs (Yellow, Red, and Blue) a specific number of times.
 
-🛠️ Components Used
+## 🛠️ Components Used
 - Arduino Uno
 - Breadboard
 - 3 LEDs (Yellow, Red, Blue)
 - 3 Resistors 
 - Jumper Wires
 
-💡 Logic & Setup
+## 💡 Logic & Setup
 - Loop Control: Utilized `for(int j=0; j<times; j=j+1)` to precisely control the exact number of blinks for each LED independently.
 - Pins Used: Connected Yellow LED to pin 6, Red LED to pin 9, and Blue LED to pin 10.
 - Variables: Declared custom variables (`yellowTimes=6`, `redTimes=9`, `blueTimes=10`, and `delayT=100`) at the top of the sketch to easily adjust the blink counts and speed without modifying the core loops.
 
-🎥 Physical Demonstration
+## 🎥 Physical Demonstration
 
 
 ---
