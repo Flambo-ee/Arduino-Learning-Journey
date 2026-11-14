@@ -1,3 +1,22 @@
+# Lesson 05: Controlling LEDs via Serial Monitor Input 💬
+A practical project demonstrating how to read text commands (`String`) from the Arduino Serial Monitor and use conditional `if` statements to selectively turn on one of four LEDs (Red, Green, Blue, and Yellow).
+
+## 🛠️ Components Used
+- Arduino Uno
+- Breadboard
+- 4 LEDs (Red, Green, Blue, Yellow)
+- 4 Resistors
+- Jumper Wires
+
+## 💡 Logic & Setup
+- **Serial User Input:** Utilized `while(Serial.available()==0) {}` to pause program execution until user input is detected, then captured the text command using `Serial.readString()`.
+- **Conditional Switching:** Implemented multiple `if` statements (`TheColor == "red"`, `"green"`, `"blue"`, `"yellow"`) to turn `HIGH` the requested LED while ensuring all other LEDs are explicitly set to `LOW`.
+- **Pins Used:** Connected Blue LED to pin 9, Green LED to pin 11, Yellow LED to pin 12, and Red LED to pin 13.
+- **Variables & Feedback:** Stored prompt messages (`msg`, `msg2`) and user input (`TheColor`) in `String` variables to provide clear interactive feedback on the Serial Monitor.
+
+
+---
+### 🎥 Physical Demonstration
 # Lesson 04: Sequential LED Blinking with For Loops 🚦
 A practical project demonstrating the use of C++ `for` loops to sequentially blink three LEDs (Yellow, Red, and Blue) a specific number of times.
 
