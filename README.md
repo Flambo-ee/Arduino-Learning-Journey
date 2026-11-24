@@ -1,3 +1,23 @@
+# Lesson 06: Push Button Toggle Switch (LED State Control) 🔘💡
+A practical project demonstrating how to build a software-based toggle switch using a momentary push button and state memory variables, allowing each press-and-release cycle to alternate an LED between ON and OFF states.
+
+## 🛠️ Components Used
+- Arduino Uno
+- Breadboard
+- 1 Red LED
+- 1 Push Button
+- 1 Resistor (220Ω for LED current limiting)
+- 1 Resistor (10kΩ pull-up resistor)
+- Jumper Wires
+
+## 💡 Logic & Setup
+- **Edge Detection:** Utilized `buttonOld` and `buttonNew` variables to compare the previous and current button states, triggering the action only at the exact moment of button release (`buttonOld == 0 && buttonNew == 1`).
+- **State Memory:** Used a tracking variable (`ledState`) to remember whether the LED is currently OFF (`0`) or ON (`1`), flipping its state on each valid press-and-release cycle.
+- **Pins Used:** Connected Red LED to digital pin `10` and read the push button signal via analog pin `A1` acting as a digital input (`digitalRead(A1)`).
+- **Debouncing:** Added a short `delay(50)` at the end of the loop to filter out mechanical button bounce and prevent multiple unintended toggles.
+
+
+---
 # Lesson 05: Controlling LEDs via Serial Monitor Input 💬
 A practical project demonstrating how to read text commands (`String`) from the Arduino Serial Monitor and use conditional `if` statements to selectively turn on one of four LEDs (Red, Green, Blue, and Yellow).
 
@@ -14,9 +34,10 @@ A practical project demonstrating how to read text commands (`String`) from the 
 - **Pins Used:** Connected Blue LED to pin 9, Green LED to pin 11, Yellow LED to pin 12, and Red LED to pin 13.
 - **Variables & Feedback:** Stored prompt messages (`msg`, `msg2`) and user input (`TheColor`) in `String` variables to provide clear interactive feedback on the Serial Monitor.
 
+### 🎥 Physical Demonstration
+
 
 ---
-### 🎥 Physical Demonstration
 # Lesson 04: Sequential LED Blinking with For Loops 🚦
 A practical project demonstrating the use of C++ `for` loops to sequentially blink three LEDs (Yellow, Red, and Blue) a specific number of times.
 
