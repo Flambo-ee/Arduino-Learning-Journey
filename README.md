@@ -1,3 +1,24 @@
+# Lesson 07: Dimmable LED Control with Dual Push Buttons 🔆🔘
+A practical project demonstrating how to control the brightness of an LED using Pulse Width Modulation (PWM) and two push buttons—one to incrementally increase brightness and the other to dim it down.
+
+## 🛠️ Components Used
+- Arduino Uno
+- Breadboard
+- 1 Red LED
+- 2 Push Buttons
+- 1 Resistor (220Ω for LED current limiting)
+- 2 Resistors (10kΩ pull-up resistors for the push buttons)
+- Jumper Wires
+
+## 💡 Logic & Setup
+- **PWM Brightness Control:** Utilized `analogWrite(redPin, ledBright)` on PWM-capable pin `10` to smoothly vary LED brightness across the 8-bit analog range (`0` to `255`).
+- **Incremental Adjustment:** Used two active-low push buttons (`buttonPin1` on `A1` and `buttonPin2` on `A2`) to increment or decrement `ledBright` by steps of `20` while pressed.
+- **Boundary Clamping:** Implemented safety conditional checks (`if (ledBright > 255)` and `if (ledBright < 0)`) to clamp the brightness value within valid PWM limits and prevent integer overflow.
+- **Serial Monitoring & Pacing:** Printed real-time button states to the Serial Monitor alongside a `delay(100)` to regulate the dimming speed and provide smooth visual transitions.
+
+## 🎥 Physical Demonstration
+
+---
 # Lesson 06: Push Button Toggle Switch (LED State Control) 🔘💡
 A practical project demonstrating how to build a software-based toggle switch using a momentary push button and state memory variables, allowing each press-and-release cycle to alternate an LED between ON and OFF states.
 
@@ -34,7 +55,7 @@ A practical project demonstrating how to read text commands (`String`) from the 
 - **Pins Used:** Connected Blue LED to pin 9, Green LED to pin 11, Yellow LED to pin 12, and Red LED to pin 13.
 - **Variables & Feedback:** Stored prompt messages (`msg`, `msg2`) and user input (`TheColor`) in `String` variables to provide clear interactive feedback on the Serial Monitor.
 
-### 🎥 Physical Demonstration
+## 🎥 Physical Demonstration
 
 
 ---
